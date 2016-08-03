@@ -44,6 +44,49 @@ cd themes/apollo
 git pull
 ```
 
+### 主机替换更新
+
+这里只需要git我这里的主题，然后执行hexo g 然后在提交hexo d 发布到github上面。
+这里提交hexo g 如果会出现： `的ERROR Process failed: layout/_partial/.DS_Store`
+
+ 解决Hexo博客 ERROR Process failed: layout/_partial/.DS_Store问题来源
+```
+在用Hexo搭的博客在执行hexo g 的时候，会出现错误：
+
+ERROR Process failed: layout/.DS_Store TypeError: Cannot read 
+property 'compile' of undefined 还有
+
+ERROR Process failed: layout/_partial/.DS_Store TypeError: Cannot 
+read property 'compile' of undefined
+
+虽然不影响生成文件与使用，但是一直error让人很不舒服；
+.DS_Store是什么：
+
+1、这种文件存在于众多的OS文件目录中，Finder自动隐藏它们，所以用户不会感到其存在。.DS_Store几乎存在于每个文件当中。它是Finder记录客户定制文件夹显示方式的一种元数据文件（metadata）用于控制一个文件夹的显示方式（列表、图标、分栏和CoverFlow）和背景图标等。 
+2、与别人交换文件或做的网页需要上传的时候，最好把 .DS_Store 文件删除。
+与.DS_Store相关的设置
+
+禁止.DS_Store生成
+
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+恢复.DS_Store生成
+
+defaults delete com.apple.desktopservices DSDontWriteNetworkStores
+直接解决的方法：
+
+1、删除所有.DS_Store文件，在terminal中输入:
+
+sudo find / -name ".DS_Store" -depth -exec rm {} \;
+
+2、cd 进到你使用的theme对应的目录，再进到layout/和layout/_partial/下, 分别执行
+
+rm .DS_Store
+```
+
+也可参考：http://blog.csdn.net/u014491743/article/details/51340609
+这里我删除所有的.DS_store
+
+
 ## License
 
 MIT
