@@ -50,7 +50,8 @@ git pull
 这里提交hexo g 如果会出现： `的ERROR Process failed: layout/_partial/.DS_Store`
 
  解决Hexo博客 ERROR Process failed: layout/_partial/.DS_Store问题来源
-```
+
+```bash
 在用Hexo搭的博客在执行hexo g 的时候，会出现错误：
 
 ERROR Process failed: layout/.DS_Store TypeError: Cannot read 
