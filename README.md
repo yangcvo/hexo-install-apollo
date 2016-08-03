@@ -2,8 +2,8 @@
 
 ## 文档
 
-- [中文文档](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc%2Fdoc-zh.md)
-- [Document](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc%2Fdoc-en.md)
+- [中文文档](https://github.com/yangcvo/hexo-install-apollo/blob/master/doc%2Fdoc-zh.md)
+- [Document](https://github.com/yangcvo/hexo-install-apollo/blob/master/doc%2Fdoc-en.md)
 
 ps. hexo-theme-apollo 的定位是简洁和专注于内容，所以将不再接受新功能的 pull request，如果有新的想法，那将会是另一个主题。
 
