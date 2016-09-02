@@ -87,6 +87,39 @@ rm .DS_Store
 也可参考：http://blog.csdn.net/u014491743/article/details/51340609
 这里我删除所有的.DS_store
 
+## Configure
+In the theme configuration file `_config.yml`:
+
+```yaml
+# duoshuo comment
+duoshuo: true
+duoshuo_name:
+
+# disqus comment
+disqus: false
+disqus_shortname:
+
+# google analytics
+googleTrackId:
+```
+
+
+`duoshuo`: `boolean`, use duoshuo or not;  
+`duoshuo_name`: `string`, your duoshup ID, please don't use other people's IDs。
+
+`disqus`: `boolean`, use disqus or not;  
+`disqus_shortname`: your disqus site shortname.
+
+`googleTrackId`: your Google Analytics ID, Hacker will not use Google Analytics if it's empty.
+
+这里添加评论功能就这么简单。
+
+```
+duoshuo: true
+duoshuo_name: yangc
+```
+这是我写的，所以直接hexo g -d 提交就可以了。
+
 
 ## License
 
