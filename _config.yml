@@ -1,21 +1,40 @@
 menu:
     Blog: /
     Archive: /archives/
-    Weibo: http://weibo.com/sunchongsheng
-    GitHub: https://github.com/pinggod
+    Weibo: http://weibo.com/yangcvo
+    GitHub: https://github.com/yangcvo
+    About: http://blog.yangcvo.me/2014/05/04/%E4%B8%AA%E4%BA%BA%E8%AE%B0%E5%BD%95/About-me/
     Rss: /atom.xml
+
+#### Widgets
+widgets:
+- category
+- tag
+- rss
+## provide six widgets:category,tag,rss,archive,tagcloud,links.
+## modify links in `/layout/_widget/links.ejs`.
+
 
 favicon: /favicon.png
 logo: /favicon.png
 
-# Comment
-# e.g disqus: seansun
-disqus:
-duoshuo:
+## Comment
+##  e.g disqus: seansun
+## disqus:
+## duoshuo:
+duoshuo: true
+duoshuo_name: yangc
+
+## domain: yangc
+##  enable: true  ## duoshuo.com
+## short_name: yangc     ## duoshuo short name.
+
 
 # Analytics
 # google-analytics:
 ga: UA-65933410-1
 
+
 # Copyright Infomation
-startyear: 2015
+startyear: 2014
+~
